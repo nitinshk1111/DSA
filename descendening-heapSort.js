@@ -28,11 +28,11 @@ function heapify(array, index, size) {
   
   // find max from left child, right child, max
   
-  if (left < size && array[left] > array[largest]) {
+  if (left < size && array[left] < array[largest]) {
     largest = left;
   }
 
-  if (right < size && array[right] > array[largest]) {
+  if (right < size && array[right] < array[largest]) {
     largest = right;
   }
   if (largest != index) {
